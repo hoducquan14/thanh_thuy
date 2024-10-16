@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Page</title>
+    <style>
+        body {
+            background-color: #ffc0cb; /* Nền màu hồng */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #333;
+            margin: 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ff69b4; /* Màu hồng đậm */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #ff1493; /* Thay đổi màu khi di chuột qua */
+        }
+
+        /* Tạo các bông hoa xung quanh */
+        .flower {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-image: url('https://example.com/flower.png'); /* Đường dẫn ảnh bông hoa */
+            background-size: cover;
+            opacity: 0.8;
+            animation: float 10s infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        .flower:nth-child(1) { top: 10%; left: 15%; }
+        .flower:nth-child(2) { top: 20%; right: 10%; }
+        .flower:nth-child(3) { bottom: 15%; left: 25%; }
+        .flower:nth-child(4) { bottom: 10%; right: 20%; }
+        .flower:nth-child(5) { top: 40%; left: 5%; }
+        .flower:nth-child(6) { top: 30%; right: 30%; }
+    </style>
+</head>
+<body>
+    <h1>Chúc cậu 20/10 vui vẻ nhó</h1>
+    <button onclick="window.location.href='https://hoducquan14.github.io/flowerr/';">Cậu nhấn vào đây đi</button>
+
+    <!-- Các bông hoa -->
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+</body>
+</html>
